@@ -392,7 +392,7 @@ PROFILE LINK : instagram.com/{username}](https://www.instagram.com/{username}
     with open('collob.txt', 'a') as f:
         f.write(info_text + "\n")
     try:
-        requests.get(f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={ID}&text={info_text}")
+        requests.get(f"https://api.telegram.org/bot{Token}/sendMessage?chat_id={ID}&text={info_text}")
     except Exception as e:
         print("Telegram message could not be sent:", e)
 def thonfipy():
